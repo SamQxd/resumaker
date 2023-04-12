@@ -1,0 +1,306 @@
+<!--WZ-REKLAMA-1.0IZ--><div style="clear:both;width:100%%;height:90px;padding:0px;z-index:99;position:relative;"><div style="width:728px;height:90px;margin:0 auto;">        <script src="https://www.webzdarma.cz/assets/static/floatad.js" async defer></script></div></div><!--WZ-REKLAMA-1.0IK--><!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resumaker</title>
+    <link rel="icon" href="images/pen.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #28282B;
+            background-size: cover;
+        }
+
+        a {
+            font-family:Georgia;
+            text-decoration: none;
+            color: #fff;
+            margin-right:50px;
+        }
+
+        a:hover {
+            color: #49c5b6;
+            font-size:15px;
+        }
+
+        input {
+            border: none;
+        }
+
+        #resume{
+            font-family: Georgia;
+            font-size: 20px;
+            border-style: solid;
+            padding-left: 6cm;
+            padding-top: 30px;
+            border-radius: 0cm;
+            width: 15cm;
+            height: 22cm;
+            border-color: #49c5b6;
+            background-color: #fff;
+            margin-left: 15%;
+            position: relative;
+            overflow:scroll;
+        }
+
+        p, p1, p3 {
+            font-family: Georgia;
+            font-size: 14.5px;
+            line-height: 0.5px;
+        }
+
+        textarea {
+            border-style: none;
+            resize: vertical;
+        }
+        
+        #buttons {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+
+        }
+
+        #inputs {
+            color:#fff;
+            font-family: Georgia;
+            z-index: 2;
+            padding-left: 1%;
+        }
+
+        p1 {
+            font-weight: bold;
+        }
+
+        .sidebar {
+            height: 93.3%;
+            width: 0;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            z-index: 2;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            border-style: solid;
+            border-color: #49c5b6;
+            border-width: 0.0001cm;
+            border-radius: 0cm;
+            
+        }
+
+        .sidebar a, p4 {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: relative;
+            font-size: 25px;
+            margin-right: 50px;
+            z-index: 2;
+        }
+
+
+
+        #sidebutton {
+            transition: margin-right .5s;
+            padding: 16px;
+            position: absolute;
+            bottom: 50%;
+            right: 5%;
+            font-family: Georgia;
+        }
+
+        table {
+            empty-cells: hide;
+            color: white;
+        }
+
+        td {
+                border:1px solid white;
+                font-family: Georgia;
+                font-size: 14.5px;
+                line-height: 0.5px;
+                padding: 14.5px;
+        }
+
+        td1 {
+                border:1px solid black;
+                font-family: Georgia;
+                font-size: 14.5px;
+                line-height: 0.5px;
+                padding: 7px;
+        }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 200px) {
+            .sidebar a {font-size: 18px;}
+        }
+
+        #logo {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="resume">
+        <p id="name_resume"></p>
+        <br>
+        <p1>Phone number: </p1>
+        <p id="phone_resume"></p>
+        <br>
+        <p1>Date of birth: </p1>
+        <p id="birth_resume"></p>
+        
+        <p1> Place of birth: </p1>
+        <p id="place_resume"></p>
+        
+        <p1> Nationality: </p1>
+        <p id="nation_resume"></p>
+        <br>
+
+        <p1>Education:</p1>
+        <p id="period1_resume"></p>
+        <p id="highschool_resume"></p>
+        <p id="period2_resume"></p>
+        <p id="college_resume"></p>
+        <br>
+        
+        <p1>Prior experience: </p1>
+        <br>
+        <p><p3 id="occupation_resume"></p3> | <p3 id="period3_resume"></p3> | <p3 id="description_resume"></p3></p>
+        <br>
+        <p><p3 id="occupation_resume_1"></p3> | <p3 id="period3_resume_1"></p3> | <p3 id="description_resume_1"></p3></p>
+        
+        <br><br><br>
+        
+        
+
+        <p1>Languages: </p1>
+        <br><br><br>
+        
+        <p3 id="languages_resume"></p3>
+        <br><br><br>
+        
+        
+        <p1>Interests: </p1>
+        <br><br><br>
+        
+        <p3 id="interests_resume"></p3>
+
+            
+        </div>
+    
+        
+
+        <div id="buttons">
+            <img src="images/word.png" width="170.6666667" height="170.6666667" id="download"/>
+            <script src="download.js"></script>
+        </div>
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div id="logo">
+                <img src="images/title.png" width="369.5" height="168.5">
+            </div>
+            <div id="inputs">
+                <form>
+                    <label>Name, Address, Post code: </label>
+                    <input type="text" id="name" value="John Wick, Times Square, New York City, 911 200" size="45">
+                    <br><br>
+
+                    <label>Phone number: </label>
+                    <input type="text" id="phone" value="(555) 555-1234" size="15">
+                    <br><br>
+
+                    <label>Date of birth: </label>
+                    <input type="text" id="birth" value="10.8.2000" size="15">
+                    <br><br>
+
+                    <label>Place of birth: </label>
+                    <input type="text" id="place" value="New York City" size="15">
+                    <br><br>
+
+                    <label>Nationality: </label>
+                    <input type="text" id="nation" value="American" size="15">
+                    <br><br>
+
+                    <label>Period of attendance(High school): </label>
+                    <input type="text" id="period1" value="2001-2005"  size="15">
+                    <br><br>
+
+                    <label>High school: </label>
+                    <input type="text" id="highschool" value="High School" title="Name of school" size="20">
+                    <br><br>
+
+                    <label>Period of attendance(College): </label>
+                    <input type="text" id="period2" value="2006-2011" size="15">
+                    <br><br>
+
+                    <label>College: </label>
+                    <input type="text" id="college" value="College" title="Name of school" size="20">
+                    <br><br>
+
+                    <label>Prior experience: </label>
+                    <br><br>
+                    <table>
+                        <tr>
+                            <td>Occupation type: </td>
+                            <td>Period of employment: </td>
+                            <td>Description: </td>
+                        </tr>
+                        <tr>
+                            <td><textarea rows="3" cols= "15" id="occupation" placeholder="Full-stack developer"></textarea></td>
+                            <td><textarea rows="3" cols= "15" id="period3" placeholder="2001-2005"></textarea></td>
+                            <td><textarea rows="3" cols= "15" id="description" placeholder="Brief description of the job(Max 60 characters)"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><textarea rows="3" cols= "15" id="occupation_1" placeholder="Java developer"></textarea></td>
+                            <td><textarea rows="3" cols= "15" id="period3_1" placeholder="2005-2007"></textarea></td>
+                            <td><textarea rows="3" cols= "15" id="description_1" placeholder="Brief description of the job(Max 60 characters)"></textarea></td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <label>Languages: </label>
+                    <br>
+                    
+                    <textarea rows="3" cols="60" id="languages" placeholder="I speak english on a C1 level."></textarea>
+                    <br><br>
+
+                    <label>Interests: </label>
+                    <br>
+                    
+                    <textarea rows="3" cols="60" id="interests"  placeholder="I play soccer..."></textarea>
+                    <br>
+                </form>
+                <button id="button">Submit</button>
+                <script src="index.js"></script>
+            </div>
+        </div>
+
+        <div id="sidebutton">
+            <img src="images/arrow.png" class="openbtn" onclick="openNav()" width="100" height="100">
+            <script src="sidepanel.js"></script>
+        </div>
+
+
+
+</html>
